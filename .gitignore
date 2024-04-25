@@ -1,0 +1,6 @@
+# NPM configuration
+node_modules
+package-lock.json
+
+# Local development
+tools 

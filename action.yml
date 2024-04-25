@@ -1,0 +1,11 @@
+name: 'Node.js PR Workflow Helper'
+description: 'A GitHub Action to help with Node.js PR workflows'
+author: 'Node.js'
+inputs:
+  token:
+    description: 'GitHub token'
+    required: true
+    default: ${{ github.token }}
+runs:
+  using: 'node20' # Once Github supports Node.js 22, this should be updated to 'node22'
+  main: 'dist/index.js'
